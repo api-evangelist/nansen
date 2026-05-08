@@ -2,22 +2,63 @@ aid: nansen
 url: https://raw.githubusercontent.com/api-evangelist/nansen/refs/heads/main/apis.yml
 name: Nansen
 x-type: company
-description: >-
-  Nansen is an onchain analytics platform with wallet labeling, smart-money tracking, NFT analytics, and Query (SQL) APIs across 30+ chains.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Web3
   - Crypto
   - On-Chain
   - Wallet Labels
+  - Smart Money
   - Analytics
+  - Multi-chain
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+description: >-
+  Nansen is an onchain analytics platform with wallet labeling, smart-money tracking, token
+  screener, portfolio, prediction markets, and AI Agent endpoints across 30+ chains. The Nansen
+  API exposes REST endpoints under api.nansen.ai with Smart Money, Profiler, Token Screener,
+  Portfolio, Points, Hyperliquid, Agent, and Prediction Markets categories.
+apis:
+  - aid: nansen:rest-api
+    name: Nansen REST API
+    tags:
+      - On-Chain
+      - Smart Money
+      - Wallet Labels
+      - Token Screener
+      - Portfolio
+      - Multi-chain
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://api.nansen.ai/api/v1
+    humanURL: https://docs.nansen.ai/
+    description: >-
+      REST API surfacing Nansen's on-chain intelligence: smart-money flows, profiler (wallet
+      labels and balances), token screener, portfolio, points, Hyperliquid analytics, prediction
+      markets, and the Nansen Agent AI endpoint. Authentication via apiKey header. Throttled at
+      20 requests per second and 300 per minute by default.
+    properties:
+      - type: Documentation
+        url: https://docs.nansen.ai/
+      - type: Pricing
+        url: https://www.nansen.ai/pricing
+    x-features:
+      - 30+ chains coverage
+      - Smart-money wallet flows
+      - 300M+ wallet labels
+      - Token screener
+      - AI Agent endpoint
+    x-use-cases:
+      - Trading signal generation
+      - Wallet attribution
+      - Portfolio compliance and surveillance
 common:
-  - type: Website
+  - type: Portal
     url: https://www.nansen.ai/
+  - type: Documentation
+    url: https://docs.nansen.ai/
+  - type: Pricing
+    url: https://www.nansen.ai/pricing
   - type: Plans
     url: plans/nansen-plans-pricing.yml
   - type: RateLimits

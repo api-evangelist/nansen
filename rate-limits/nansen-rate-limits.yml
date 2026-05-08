@@ -5,31 +5,36 @@ provider: Nansen
 providerId: nansen
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
-- Web3
-- Crypto
-- On-Chain
-- Wallet Labels
-- Analytics
-- Rate Limiting
-- Quotas
-- Throttling
-description: Placeholder rate-limit artifact for Nansen. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+  - Crypto
+  - On-Chain
+  - Rate Limiting
+description: >-
+  Nansen documents per-API-key rate limits of 20 requests per second and 300 requests per minute
+  on the Standard API plan. Higher Enterprise contracts raise these caps. Throttled requests
+  return HTTP 429.
 sources:
-- https://www.nansen.ai/
+  - https://docs.nansen.ai/getting-started/rate-limits
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  - name: Standard API per-second
+    scope: api_key
+    metric: requests_per_second
+    limit: 20
+  - name: Standard API per-minute
+    scope: api_key
+    metric: requests_per_minute
+    limit: 300
+  - name: Enterprise API
+    scope: api_key
+    metric: requests_per_second
+    limit: -1
+    notes: Custom limit per contract.
 policies:
-- name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+  - name: Backoff Strategy
+    description: Honor 429 Retry-After and apply exponential backoff with jitter.
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
