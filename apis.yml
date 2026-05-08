@@ -1,0 +1,29 @@
+aid: nansen
+url: https://raw.githubusercontent.com/api-evangelist/nansen/refs/heads/main/apis.yml
+name: Nansen
+x-type: company
+description: >-
+  Nansen is an onchain analytics platform with wallet labeling, smart-money tracking, NFT analytics, and Query (SQL) APIs across 30+ chains.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Web3
+  - Crypto
+  - On-Chain
+  - Wallet Labels
+  - Analytics
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.nansen.ai/
+  - type: Plans
+    url: plans/nansen-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/nansen-rate-limits.yml
+  - type: FinOps
+    url: finops/nansen-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
