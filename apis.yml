@@ -1,7 +1,7 @@
 aid: nansen
 url: https://raw.githubusercontent.com/api-evangelist/nansen/refs/heads/main/apis.yml
 name: Nansen
-x-type: company
+kind: company
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Web3
