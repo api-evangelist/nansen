@@ -53,6 +53,10 @@ apis:
       - Wallet attribution
       - Portfolio compliance and surveillance
 common:
+  - type: GitHubOrganization
+    url: https://github.com/nansen-ai
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/nansen
   - type: Portal
     url: https://www.nansen.ai/
   - type: Documentation
