@@ -2,7 +2,7 @@ aid: nansen
 url: https://raw.githubusercontent.com/api-evangelist/nansen/refs/heads/main/apis.yml
 name: Nansen
 kind: company
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Web3
   - Crypto
@@ -29,7 +29,7 @@ apis:
       - Token Screener
       - Portfolio
       - Multi-chain
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.nansen.ai/api/v1
     humanURL: https://docs.nansen.ai/
     description: >-
