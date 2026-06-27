@@ -69,7 +69,7 @@ common:
     url: rate-limits/nansen-rate-limits.yml
   - type: FinOps
     url: finops/nansen-finops.yml
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.nansen.ai/llms.txt
 maintainers:
   - FN: Kin Lane
