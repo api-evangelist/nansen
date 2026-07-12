@@ -53,6 +53,10 @@ apis:
       - Wallet attribution
       - Portfolio compliance and surveillance
 common:
+  - type: DomainSecurity
+    url: security/nansen-domain-security.yml
+  - type: Authentication
+    url: authentication/nansen-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/nansen-ai
   - type: LinkedIn
@@ -71,6 +75,8 @@ common:
     url: finops/nansen-finops.yml
   - type: LlmsText
     url: https://docs.nansen.ai/llms.txt
+  - type: Blog
+    url: https://nansen.ai/blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
