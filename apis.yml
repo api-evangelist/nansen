@@ -53,6 +53,8 @@ apis:
       - Wallet attribution
       - Portfolio compliance and surveillance
 common:
+  - type: AgenticAccess
+    url: agentic-access/nansen-agentic-access.yml
   - type: DomainSecurity
     url: security/nansen-domain-security.yml
   - type: Authentication
