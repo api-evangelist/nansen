@@ -1,0 +1,14 @@
+{
+  "provider": "nansen",
+  "sources": [
+    "nansen-smart-money-api-openapi.yml"
+  ],
+  "outputs": [
+    "nansen-smart-money-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

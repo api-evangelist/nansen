@@ -1,0 +1,145 @@
+openapi: 3.1.0
+info:
+  title: Nansen REST API
+  description: |
+    Nansen is an onchain analytics platform. This REST API surfaces
+    Nansen's smart-money flows and related onchain intelligence across
+    multiple chains. Authentication uses an apiKey header. Default rate
+    limits are 20 requests per second and 300 per minute.
+  version: v1
+servers:
+  - url: https://api.nansen.ai/api/v1
+    description: Nansen production API
+security:
+  - apiKeyAuth: []
+tags:
+  - name: Smart Money
+    description: Smart-money wallet flows and behavior.
+paths:
+  /smart-money/netflow:
+    get:
+      tags: [Smart Money]
+      summary: Get smart-money netflow
+      operationId: getSmartMoneyNetflow
+      parameters:
+        - in: query
+          name: chain
+          schema:
+            type: string
+        - in: query
+          name: timeframe
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Netflow data.
+          content:
+            application/json:
+              schema:
+                type: object
+  /smart-money/dex-trades:
+    get:
+      tags: [Smart Money]
+      summary: Get smart-money DEX trades
+      operationId: getSmartMoneyDexTrades
+      parameters:
+        - in: query
+          name: chain
+          schema:
+            type: string
+        - in: query
+          name: token
+          schema:
+            type: string
+      responses:
+        '200':
+          description: DEX trades.
+          content:
+            application/json:
+              schema:
+                type: object
+  /smart-money/perp-trades:
+    get:
+      tags: [Smart Money]
+      summary: Get smart-money perpetual trades
+      operationId: getSmartMoneyPerpTrades
+      parameters:
+        - in: query
+          name: chain
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Perpetual trades.
+          content:
+            application/json:
+              schema:
+                type: object
+  /smart-money/dcas:
+    get:
+      tags: [Smart Money]
+      summary: Get smart-money DCA activity
+      operationId: getSmartMoneyDcas
+      parameters:
+        - in: query
+          name: chain
+          schema:
+            type: string
+      responses:
+        '200':
+          description: DCA activity.
+          content:
+            application/json:
+              schema:
+                type: object
+  /smart-money/holdings:
+    get:
+      tags: [Smart Money]
+      summary: Get smart-money current holdings
+      operationId: getSmartMoneyHoldings
+      parameters:
+        - in: query
+          name: chain
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Current holdings.
+          content:
+            application/json:
+              schema:
+                type: object
+  /smart-money/historical-holdings:
+    get:
+      tags: [Smart Money]
+      summary: Get smart-money historical holdings
+      operationId: getSmartMoneyHistoricalHoldings
+      parameters:
+        - in: query
+          name: chain
+          schema:
+            type: string
+        - in: query
+          name: from
+          schema:
+            type: string
+            format: date
+        - in: query
+          name: to
+          schema:
+            type: string
+            format: date
+      responses:
+        '200':
+          description: Historical holdings.
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: apiKey
+      description: Nansen API key issued to subscribed customers.
