@@ -26,7 +26,7 @@ tags:
   - Multi-chain
 created: '2026-05-08'
 modified: '2026-05-08'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Nansen is an onchain analytics platform with wallet labeling, smart-money tracking, token
   screener, portfolio, prediction markets, and AI Agent endpoints across 30+ chains. The Nansen
