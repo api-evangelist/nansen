@@ -1,0 +1,154 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Nansen REST Smart Money API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "apiKey",
+      "value": "{{apiKey}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Smart Money",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get smart-money netflow",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nansen.ai/api/v1/smart-money/netflow",
+            "params": [
+              {
+                "name": "chain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "timeframe",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get smart-money netflow"
+        },
+        {
+          "info": {
+            "name": "Get smart-money DEX trades",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nansen.ai/api/v1/smart-money/dex-trades",
+            "params": [
+              {
+                "name": "chain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "token",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get smart-money DEX trades"
+        },
+        {
+          "info": {
+            "name": "Get smart-money perpetual trades",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nansen.ai/api/v1/smart-money/perp-trades",
+            "params": [
+              {
+                "name": "chain",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get smart-money perpetual trades"
+        },
+        {
+          "info": {
+            "name": "Get smart-money DCA activity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nansen.ai/api/v1/smart-money/dcas",
+            "params": [
+              {
+                "name": "chain",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get smart-money DCA activity"
+        },
+        {
+          "info": {
+            "name": "Get smart-money current holdings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nansen.ai/api/v1/smart-money/holdings",
+            "params": [
+              {
+                "name": "chain",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get smart-money current holdings"
+        },
+        {
+          "info": {
+            "name": "Get smart-money historical holdings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nansen.ai/api/v1/smart-money/historical-holdings",
+            "params": [
+              {
+                "name": "chain",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get smart-money historical holdings"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
