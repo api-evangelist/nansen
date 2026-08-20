@@ -19,6 +19,14 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nansen.png
 tags:
   - Web3
   - Crypto
+  - Onchain
+  - Wallet Labels
+  - Smart Money
+  - Analytics
+  - Multi-Chain
+tags_raw:
+  - Web3
+  - Crypto
   - On-Chain
   - Wallet Labels
   - Smart Money
@@ -36,6 +44,13 @@ apis:
 - aid: nansen:rest-api
   name: Nansen REST API
   tags:
+  - Onchain
+  - Smart Money
+  - Wallet Labels
+  - Token Screener
+  - Portfolio
+  - Multi-Chain
+  tags_raw:
   - On-Chain
   - Smart Money
   - Wallet Labels
