@@ -31,11 +31,11 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nansen.png
 tags:
   - Web3
   - Crypto
-  - Onchain
+  - On-Chain
   - Wallet Labels
   - Smart Money
   - Analytics
-  - Multi-Chain
+  - Multi-chain
 tags_raw:
   - Web3
   - Crypto
@@ -56,12 +56,12 @@ apis:
 - aid: nansen:rest-api
   name: Nansen REST API
   tags:
-  - Onchain
+  - On-Chain
   - Smart Money
   - Wallet Labels
   - Token Screener
   - Portfolio
-  - Multi-Chain
+  - Multi-chain
   tags_raw:
   - On-Chain
   - Smart Money
