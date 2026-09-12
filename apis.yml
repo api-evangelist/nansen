@@ -104,6 +104,8 @@ apis:
   - type: OpenAPI
     url: openapi/nansen-smart-money-api-openapi.yml
 common:
+  - type: Website
+    url: https://www.nansen.ai/
   - type: AgenticAccess
     url: agentic-access/nansen-agentic-access.yml
   - type: DomainSecurity
