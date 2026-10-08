@@ -72,3 +72,30 @@ plans:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - negotiated
+  - rate
+  plans:
+  - name: API Standard
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - negotiated
+    - rate
+    periods:
+    - second
+    - term
+  - name: API Enterprise
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - negotiated
+    periods:
+    - term
