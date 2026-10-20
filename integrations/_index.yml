@@ -19,6 +19,51 @@
     registered_name: io.github.nansen-ai/nansen-mcp
     register_id: io.github.nansen-ai/nansen-mcp
     detected_by: sweep-agent-tools.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
+  status: not-a-workflow
+  arazzo: null
+- slug: nansen-agent-skills-own-github-org
+  label: Agent Skills (own GitHub org)
+  partner_name: Agent Skills (own GitHub org)
+  category: Agent Skills package
+  type: register
+  channel: provider-built
+  evidence: https://github.com/nansen-ai/nansen-cli
+  source: edge
+  relationship: compatible
+  contract_reference:
+    register: 'provider''s own GitHub org (GitHub REST API: repo + git tree holds SKILL.md)'
+    spec_file: null
+    standard: Agent Skills (agentskills.io)
+    role: agent-skills-repo
+    matched_org: nansen-ai
+    matched_by: org-profile-domain:nansen.ai
+    detected_by: sweep-agent-skills.py
+    detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
+- slug: nansen-skills-sh
+  label: skills.sh
+  partner_name: skills.sh
+  category: Agent Skills register
+  type: register
+  channel: standard-directory
+  evidence: https://www.skills.sh/nansen-ai/nansen-cli
+  source: edge
+  relationship: compatible
+  contract_reference:
+    register: skills.sh (public sitemap / list)
+    spec_file: null
+    standard: Agent Skills (agentskills.io)
+    role: agent-skills-listing
+    matched_org: nansen-ai
+    matched_by: org-profile-domain:nansen.ai
+    sample_skills:
+    - nansen-prediction-markets
+    - nansen-smart-money-alpha
+    - nansen-smart-money-tracker
+    - nansen-web-searcher
+    detected_by: sweep-agent-skills.py
+    detected: '2026-10-20'
   status: not-a-workflow
   arazzo: null
