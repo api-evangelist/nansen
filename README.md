@@ -1,4 +1,4 @@
-# Nansen (nansen)
+# Nansen
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,61 +66,127 @@
 
 Nansen is an onchain analytics platform with wallet labeling, smart-money tracking, token screener, portfolio, prediction markets, and AI Agent endpoints across 30+ chains. The Nansen API exposes REST endpoints under api.nansen.ai with Smart Money, Profiler, Token Screener, Portfolio, Points, Hyperliquid, Agent, and Prediction Markets categories.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/nansen/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/nansen/refs/heads/main/apis.yml)
+**Areas:** Web3 · Cryptocurrency · Onchain · Wallet Labels · Smart Money · Analytics · Multi-Chain · Ethereum
 
-## Tags
+## Nansen on APIs.io
 
-- Web3
-- Crypto
-- On-Chain
-- Wallet Labels
-- Smart Money
-- Analytics
-- Multi-chain
+Everything profiled for Nansen is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nansen/](https://apis.io/providers/nansen/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (2)
 
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+- [Nansen REST API](https://apis.io/apis/nansen/rest-api/) — REST API surfacing Nansen's on-chain intelligence: smart-money flows, profiler (wallet labels and balances), token screener, portfolio, points, Hyperliquid…
+- [Nansen Smart Money API](https://apis.io/apis/nansen/nansen-smart-money-api/) — Smart-money wallet flows and behavior.
 
-## APIs
+### Published properties
 
-### Nansen REST API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-REST API surfacing Nansen's on-chain intelligence: smart-money flows, profiler (wallet labels and balances), token screener, portfolio, points, Hyperliquid analytics, prediction markets, and the Nansen Agent AI endpoint. Authentication via apiKey header. Throttled at 20 requests per second and 300 per minute by default.
+#### MCP servers (2)
 
-- **Human URL:** [https://docs.nansen.ai/](https://docs.nansen.ai/)
-- **Base URL:** `https://api.nansen.ai/api/v1`
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [Moved to /providers/nansen/](https://apis.io/servers/nansen/nansen/)
+- [Moved to /providers/nansen/](https://apis.io/servers/nansen/nansen-2/)
 
-- On-Chain
-- Smart Money
-- Wallet Labels
-- Token Screener
-- Portfolio
-- Multi-chain
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
 
+- [Nansen Agentic Access](https://apis.io/agentic-access/nansen/nansen-agentic-access/)
+
+#### Collections (2)
+
+Postman and Open Collection request collections.
+
+- [Nansen REST API](https://apis.io/collections/nansen/open-nansen/)
+- [Nansen REST Smart Money API](https://apis.io/collections/nansen/open-nansen-smart-money-api/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Nansen Authentication](https://apis.io/security/nansen/nansen-authentication/)
+- [Nansen Domain Security](https://apis.io/security/nansen/nansen-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Nansen Plans Pricing](https://apis.io/plans/nansen/nansen-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Nansen Rate Limits](https://apis.io/rate-limits/nansen/nansen-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Nansen Finops](https://apis.io/finops/nansen/nansen-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.nansen.ai/)
 - [Documentation](https://docs.nansen.ai/)
 - [Pricing](https://www.nansen.ai/pricing)
-- [Postman Collection](collections/nansen.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nansen.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Blog](https://nansen.ai/blog)
+- [GitHub](https://github.com/nansen-ai)
 
-## Common Properties
+## API Evangelist rating
 
-- [GitHub Organization](https://github.com/nansen-ai)
-- [LinkedIn](https://www.linkedin.com/company/nansen)
-- [Portal](https://www.nansen.ai/)
-- [Documentation](https://docs.nansen.ai/)
-- [Pricing](https://www.nansen.ai/pricing)
-- [Plans](plans/nansen-plans-pricing.yml)
-- [Rate Limits](rate-limits/nansen-rate-limits.yml)
-- [Fin Ops](finops/nansen-finops.yml)
-- [L L Ms Txt](https://docs.nansen.ai/llms.txt)
+**Kin Score 26.0** — emerging · rubric 0.25.0 · scored 2026-10-23
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 42.9 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 5.3 |
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Agent readiness 36.5** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 10.7** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/nansen/](https://apis.io/providers/nansen/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Nansen: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/nansen/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
